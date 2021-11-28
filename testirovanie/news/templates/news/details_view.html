@@ -1,0 +1,29 @@
+{%extends 'main/layout.html'%}
+{%block content%}
+<div class="feauters">
+    <h1>{{article.title}} </h1>
+    <p>{{article.time}}</p>
+    <p>{{article.full_text}}</p>
+    <a href="{% url 'news_home'%}" class="btn btn-warning">
+
+                    Вернутся назад
+
+    </a>
+    <a href="{%url 'news-update' article.id%}" class="btn btn-info">
+
+                    Обновить  данную новость
+
+            </a>
+     <a href="{%url 'news-delete' article.id%}" class="btn btn-danger">
+
+                    Удалить данную новость
+
+            </a>
+
+
+</div>
+{% endblock %}
+
+{%block title%}
+{{article.title}}
+{% endblock %}

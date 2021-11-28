@@ -1,0 +1,31 @@
+{%extends 'main/layout.html'%}
+
+
+{%block content%}
+<div class="feauters">
+{% if object_list %}
+    <h1>Нашлось!! </h1>
+
+        {% for el in object_list %}
+
+        <div class="alert alert-warning">
+            <h3>{{el.title}}</h3>
+            <p>{{el.anons}}</p>
+        
+            <a href="{% url 'news-detail' el.pk %}" class="all-articles" >
+
+
+                    Читать данную новость
+
+            </a>
+
+        </div>
+        {%endfor%}
+    {%else%}
+         <h1>К сожалению новостей по вашему запросу нет  </h1>
+    {%endif%}
+</div>
+{% endblock %}
+{%block title%}
+НУ типо новости
+{% endblock %}

@@ -1,0 +1,111 @@
+body {
+    background: #2c2c2c;
+}
+
+aside{
+    float: left;
+    background: #181818;
+    width:20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img{
+    width: 80px;
+    float: left;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+aside img:hover{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+aside .logo{
+    font-size:40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top:-5px;
+}
+aside h3{
+    margin-top:50px;
+    font-size: 30px;
+}
+
+aside ul {
+    list-style: none;
+    }
+aside ul li{
+
+    color:#ffffff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .5s ease;
+}
+aside ul li:hover, aside ul a:hover{
+    color: #eb5959;
+    text-decoration: none ;
+    transform: scale(1.10);
+}
+a { text-decoration: none; }
+main .feauters{
+    float: left;
+    color: #ffffff;
+    margin-top: 100px;
+    text-align:center;
+    width: 75%;
+}
+
+main .feauters h1{font-size: 50px}
+main .feauters p{max-width: 400px;margin: 20px auto}
+
+
+.alert-warning{
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+
+}
+
+form.post{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+
+
+
+
+form {
+
+    width: auto;
+    float: right;
+    margin-right: 30px;
+    position:absolute;
+    top:35%;
+    left: 50%;
+    align-items: center
+
+}
+input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+input:focus {
+  width: 300px;
+}

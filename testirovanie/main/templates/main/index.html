@@ -1,0 +1,33 @@
+{%extends 'main/layout.html'%}
+{%block content%}
+<div class="feauters">
+          <h1>Главная страница</h1>
+
+     </div>
+
+
+
+
+
+<div class="d1">
+<form action="{% url 'search_results' %}" method="get"  style="right: 5px">
+  <input name="q" type="text" placeholder="Поиск...">
+
+</form>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+{%block title%}
+{{title}}
+{% endblock %}
+
+
+
+
